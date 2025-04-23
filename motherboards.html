@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motherboards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/favicon" href="icon/favicon.ico">
+    <script src="main.js" defer></script>
+</head>
+<body background="images/bg/bg22.png">
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/main logo/logo.png" alt="Computer Store Logo" class="site-logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <div id="searchResults" style="display: none; position: absolute; background-color: #a4a4a4; border: 1px solid #ddd; z-index: 10;"></div>
+        </div>
+         <!-- Hamburger Menu (mobile only) -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+  
+      <!-- Navigation Bar -->
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="processors.html">Processors</a></li>
+          <li><a href="graphics-cards.html">Graphics Cards</a></li>
+          <li><a href="motherboards.html">Motherboards</a></li>
+          <li><a href="ram.html">Memory (RAM)</a></li>
+          <li><a href="storage.html">Storage</a></li>
+        </ul>
+      </nav>
+        <a href="cart.html" class="floating-cart" title="View Cart">
+            <img src="images/other/cart.png" alt="Cart Icon">
+        </a>
+        <a href="fav.html" class="floating-fav-icon" title="Favourites">
+          <img src="images/other/fav.png" alt="Favourite Icon">
+        </a>
+        
+        <div class="floating-auth">
+            <img src="images/other/login.png" alt="User Icon" class="auth-icon">
+            <div class="auth-dropdown">
+                <a href="signup.html">Sign Up</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    
+    <section id="motherboards">
+        <h2 class="section-title">Motherboards</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="images/motherboards/rog crosshair hero.jpg" alt="ASUS ROG Crosshair VIII Hero">
+                <h3>ASUS ROG Crosshair VIII Hero</h3>
+                <p>High-performance motherboard for gaming and overclocking with support for AMD Ryzen processors.</p>
+                <p class="price">$380</p>
+                <input type="number" min="1" id="asus-rog-crosshair-viii-hero-quantity" placeholder="Quantity">
+                <button class="add-to-cart" onclick="addToCart('ASUS ROG Crosshair VIII Hero', 380, 'asus-rog-crosshair-viii-hero')">Add to Cart</button>
+                <button class="add-to-favorites" onclick="saveFavouriteOrder('motherboards')">Add to Favorites ❤️</button>
+            </div>
+    
+            <div class="product">
+                <img src="images/motherboards/msi b550 tomahawk.png" alt="MSI MAG B550 TOMAHAWK">
+                <h3>MSI MAG B550 TOMAHAWK</h3>
+                <p>Mid-range motherboard for gaming and productivity, supporting AMD Ryzen 3000/5000 series processors</p>
+                <p class="price">$180</p>
+                <input type="number" min="1" id="msi-mag-b550-tomahawk-quantity" placeholder="Quantity">
+                <button class="add-to-cart" onclick="addToCart('MSI MAG B550 TOMAHAWK', 180, 'msi-mag-b550-tomahawk')">Add to Cart</button>
+                <button class="add-to-favorites" onclick="saveFavouriteOrder('motherboards')">Add to Favorites ❤️</button>
+            </div>
+    
+            <div class="product">
+                <img src="images/motherboards/aorus z590 master.png" alt="Gigabyte Z590 AORUS Master">
+                <h3>Gigabyte Z590 AORUS Master</h3>
+                <p>High-end motherboard for Intel’s 10th and 11th Gen Core processors, ideal for gaming, content creation, and overclocking.</p>
+                <p class="price">$320</p>
+                <input type="number" min="1" id="gigabyte-z590-aorus-master-quantity" placeholder="Quantity">
+                <button class="add-to-cart" onclick="addToCart('Gigabyte Z590 AORUS Master', 320, 'gigabyte-z590-aorus-master')">Add to Cart</button>
+                <button class="add-to-favorites" onclick="saveFavouriteOrder('motherboards')">Add to Favorites ❤️</button>
+            </div>
+    
+    
+            <div class="product">
+                <img src="images/motherboards/B450 Pro4(M1).png" alt="ASRock B450M Pro4">
+                <h3>ASRock B450M Pro4</h3>
+                <p>Budget-friendly motherboard for AMD Ryzen processors, offering solid performance for general-purpose computing and light gaming.</p>
+                <p class="price">$90</p>
+                <input type="number" min="1" id="asrock-b450m-pro4-quantity" placeholder="Quantity">
+                <button class="add-to-cart" onclick="addToCart('ASRock B450M Pro4', 90, 'asrock-b450m-pro4')">Add to Cart</button>
+                <button class="add-to-favorites" onclick="saveFavouriteOrder('motherboards')">Add to Favorites ❤️</button>
+            </div>
+    
+    
+            <div class="product">
+                <img src="imageS/motherboards/asus-tuf-gaming-z790.webp" alt="Intel DZ68BC">
+                <h3>ASUS TUF GAMING Z790-PRO WIFI</h3>
+                <p>TUF GAMING Z790-PRO WIFI combines the latest Intel® processors with game-ready features and military-grade durability</p>
+                <p class="price">$70</p>
+                <input type="number" min="1" id="ASUS TUF GAMING Z790-PRO WIFI-quantity" placeholder="Quantity">
+                <button class="add-to-cart" onclick="addToCart('ASUS TUF GAMING Z790-PRO WIFI', 70, 'ASUS TUF GAMING Z790-PRO WIFI')">Add to Cart</button>
+                <button class="add-to-favorites" onclick="saveFavouriteOrder('motherboards')">Add to Favorites ❤️</button>
+            </div>
+    
+            <div class="product">
+                <img src="images/motherboards/ASUS-ROG-MAXIMUS-Z790-HERO-WIFI.jpg" alt="ASUS ROG MAXIMUS Z790 HERO">
+                <h3>ASUS ROG MAXIMUS Z790 HERO</h3>
+                <p>High-end motherboard for Intel Core series processors, designed for content creators and professionals requiring powerful multi-core performance.</p>
+                <p class="price">$450</p>
+                <input type="number" min="1" id="ASUS ROG MAXIMUS Z790 HERO-quantity" placeholder="Quantity">
+                <button class="add-to-cart" onclick="addToCart('ASUS ROG MAXIMUS Z790 HERO', 450, 'ASUS ROG MAXIMUS Z790 HERO')">Add to Cart</button>
+                <button class="add-to-favorites" onclick="saveFavouriteOrder('motherboards')">Add to Favorites ❤️</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Overclocked 2025 </p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="facebook.com"><img src="images/social/fbb.png" alt="Facebook"></a>
+            <a href="https://x.com" target="x.com"><img src="images/social/twitter-logo-x.avif" alt="X"></a>
+            <a href="https://instagram.com" target="instagram.com"><img src="images/social/instagram-.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <a href="contact-us.html" class="contact-us-float" title="Contact Us">
+        <img src="images/other/contact.png" alt="Contact Us">
+    </a>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Us - Computer Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/favicon" href="icon/favicon.ico">
+</head>
+<body background="images/bg/bg 5.jpg">
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/main logo/logo.png" alt="Computer Store Logo" class="site-logo">
+            </a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    
+      
+          <!-- Navigation Bar -->
+          <nav id="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="processors.html">Processors</a></li>
+              <li><a href="graphics-cards.html">Graphics Cards</a></li>
+              <li><a href="motherboards.html">Motherboards</a></li>
+              <li><a href="ram.html">Memory (RAM)</a></li>
+              <li><a href="storage.html">Storage</a></li>
+            </ul>
+          </nav>
+        <a href="cart.html" class="floating-cart" title="View Cart">
+            <img src="images/other/cart.png" alt="Cart Icon">
+        </a>
+      
+      <div class="floating-auth">
+          <img src="images/other/login.png" alt="User Icon" class="auth-icon">
+          <div class="auth-dropdown">
+              <a href="signup.html">Sign Up</a>
+              <a href="login.html">Login</a>
+          </div>
+      </div>
+    </header>
+
+    <main class="contact-main">
+        <section class="store-info">
+            <h2>Contact Our Store</h2>
+            <p>📍 123 Tech Lane, Cyber City, Techland</p>
+            <p>📞 075 5858585 </p>
+            <p>✉️ support@overclocked.com</p>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="map-section">
+            <h2>Find Us Here</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789!2d-122.4194156846813!3d37.77492927975912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e1234abcd%3A0x98765abcdef!2sTech%20Store!5e0!3m2!1sen!2sus!4v1610000000000"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Overclocked 2025 </p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="facebook.com"><img src="images/social/fbb.png" alt="Facebook"></a>
+            <a href="https://x.com" target="x.com"><img src="images/social/twitter-logo-x.avif" alt="X"></a>
+            <a href="https://instagram.com" target="instagram.com"><img src="images/social/instagram-.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>

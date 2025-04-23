@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Cards</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/favicon" href="icon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body background="images/bg/bg22.png">
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/main logo/logo.png" alt="Computer Store Logo" class="site-logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <div id="searchResults" style="display: none; position: absolute; background-color: #a4a4a4; border: 1px solid #ddd; z-index: 10;"></div>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    
+      
+          <!-- Navigation Bar -->
+          <nav id="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="processors.html">Processors</a></li>
+              <li><a href="graphics-cards.html">Graphics Cards</a></li>
+              <li><a href="motherboards.html">Motherboards</a></li>
+              <li><a href="ram.html">Memory (RAM)</a></li>
+              <li><a href="storage.html">Storage</a></li>
+            </ul>
+          </nav>
+        <a href="cart.html" class="floating-cart" title="View Cart">
+            <img src="images/other/cart.png" alt="Cart Icon">
+        </a>
+        <a href="fav.html" class="floating-fav-icon" title="Favourites">
+          <img src="images/other/fav.png" alt="Favourite Icon">
+        </a>
+        
+        <div class="floating-auth">
+            <img src="images/other/login.png" alt="User Icon" class="auth-icon">
+            <div class="auth-dropdown">
+                <a href="signup.html">Sign Up</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="graphic-cards">
+        <h2 class="section-title">Graphic Cards</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="images/graphic cards/3090.jpg" alt="NVIDIA GeForce RTX 3090">
+                <h3>NVIDIA GeForce RTX 3090 TI</h3>
+                <p>Used for high-end gaming, 4K content creation, VR, and AI workloads.</p>
+                <p class="price">$1200</p>
+                <input type="number" min="1" id="nvidia-geforce-rtx-3090TI-quantity" placeholder="Quantity">
+                <button class="add-to-cart" onclick="addToCart('NVIDIA GeForce RTX 3090TI', 1200, 'nvidia-geforce-rtx-3090TI')">Add to Cart</button>
+                <button class="add-to-favorites" onclick="saveFavouriteOrder('graphic-cards')">Add to Favorites ❤️</button>
+            </div>
+    
+            <div class="product">
+                <img src="images/graphic cards/1660 ti.jpg" alt="NVIDIA GeForce GTX 1660 Ti">
+                <h3>GIGABYTE GeForce GTX 1660 Ti</h3>
+                <p>Mid-range graphics card used for gaming at 1080p and entry-level content creation.</p>
+                <p class="price">$280</p>
+                <input type="number" min="1" id="GIGABYTE GeForce GTX 1660 Ti-quantity" placeholder="Quantity">
+                <button class="add-to-cart" onclick="addToCart('GIGABYTE GeForce GTX 1660 Ti', 280, 'GIGABYTE GeForce GTX 1660 Ti')">Add to Cart</button>
+                <button class="add-to-favorites" onclick="saveFavouriteOrder('graphic-cards')">Add to Favorites ❤️</button>
+            </div>
+    
+            <div class="product">
+                <img src="imageS/graphic cards/rx 6900.jpg" alt="AMD Radeon RX 6900 XT">
+                <h3>AMD Radeon RX 6900 XT</h3>
+                <p>High-performance graphics card for gaming, 4K content creation, and demanding workloads.</p>
+                <p class="price">$1000</p>
+                <input type="number" min="1" id="amd-radeon-rx-6900-xt-quantity" placeholder="Quantity">
+                <button class="add-to-cart" onclick="addToCart('AMD Radeon RX 6900 XT', 1000, 'AMD Radeon RX 6900 XT')">Add to Cart</button>
+                <button class="add-to-favorites" onclick="saveFavouriteOrder('graphic-cards')">Add to Favorites ❤️</button>
+            </div>
+    
+    
+            <div class="product">
+                <img src="images/graphic cards/4070.png" alt="NVIDIA Quadro RTX 8000">
+                <h3>NVIDIA GeForce RTX 4070</h3>
+                <p>Professional graphics card used for 3D modeling, CAD, and high-end video rendering in workstations.</p>
+                <p class="price">$4000</p>
+                <input type="number" min="1" id="nvidia-quadro-rtx-8000-quantity" placeholder="Quantity">
+                <button class="add-to-cart" onclick="addToCart('NVIDIA Quadro RTX 8000', 4000, 'nvidia-quadro-rtx-8000')">Add to Cart</button>
+                <button class="add-to-favorites" onclick="saveFavouriteOrder('graphic-cards')">Add to Favorites ❤️</button>
+            </div>
+    
+    
+            <div class="product">
+                <img src="images/graphic cards/5700 xt.png" alt="AMD Radeon RX 5700 XT">
+                <h3>AMD Radeon RX 5700 XT</h3>
+                <p>Used for mid-tier gaming and VR experiences with good performance at 1440p.</p>
+                <p class="price">$350</p>
+                <input type="number" min="1" id="amd-radeon-rx-5700-xt-quantity" placeholder="Quantity">
+                <button class="add-to-cart" onclick="addToCart('AMD Radeon RX 5700 XT', 350, 'amd-radeon-rx-5700-xt')">Add to Cart</button>
+                <button class="add-to-favorites" onclick="saveFavouriteOrder('graphic-cards')">Add to Favorites ❤️</button>
+            </div>
+    
+            <div class="product">
+                <img src="images/graphic cards/Intel Arc A770 Phantom.png" alt="NVIDIA Tesla V100">
+                <h3>Intel Arc A770</h3>
+                <p>Used in data centers and for AI/machine learning tasks, offering immense processing power for deep learning models.</p>
+                <p class="price">$6000</p>
+                <input type="number" min="1" id="nvidia-tesla-v100-quantity" placeholder="Quantity">
+                <button class="add-to-cart" onclick="addToCart('NVIDIA Tesla V100', 6000, 'nvidia-tesla-v100')">Add to Cart</button>
+                <button class="add-to-favorites" onclick="saveFavouriteOrder('graphic-cards')">Add to Favorites ❤️</button>
+            </div>
+        </div>
+    </section>
+
+
+   <footer>
+        <p>&copy; Overclocked 2025 </p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="facebook.com"><img src="images/social/fbb.png" alt="Facebook"></a>
+            <a href="https://x.com" target="x.com"><img src="images/social/twitter-logo-x.avif" alt="X"></a>
+            <a href="https://instagram.com" target="instagram.com"><img src="images/social/instagram-.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <a href="contact-us.html" class="contact-us-float" title="Contact Us">
+        <img src="images/other/contact.png" alt="Contact Us">
+    </a>
+</body>
+</html>

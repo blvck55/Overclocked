@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/favicon" href="icon/favicon.ico">
+    <script src="main.js" defer></script>
+</head>
+<body background="images/bg/bg55.png">
+    <header>
+        <div class="logo-container">
+            <img src="images/main logo/logo.png" alt="Computer Store Logo" class="site-logo">
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    
+      
+          <!-- Navigation Bar -->
+          <nav id="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="processors.html">Processors</a></li>
+              <li><a href="graphics-cards.html">Graphics Cards</a></li>
+              <li><a href="motherboards.html">Motherboards</a></li>
+              <li><a href="ram.html">Memory (RAM)</a></li>
+              <li><a href="storage.html">Storage</a></li>
+            </ul>
+          </nav>
+        <a href="cart.html" class="floating-cart" title="View Cart">
+            <img src="images/other/cart.png" alt="Cart Icon">
+        </a>
+        <a href="fav.html" class="floating-fav-icon" title="Favourites">
+          <img src="images/other/fav.png" alt="Favourite Icon">
+        </a>
+        
+        <div class="floating-auth">
+            <img src="images/other/login.png" alt="User Icon" class="auth-icon">
+            <div class="auth-dropdown">
+                <a href="signup.html">Sign Up</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-container">
+        <h2>Your Cart</h2>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    
+                        <td>Product</th>
+                        <th>Quantity</th>
+                        <th>price</th>
+                        <th>Remove</th>
+                        
+                        
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be injected here -->
+            </tbody>
+        </table>
+        <div class="cart-summary">
+            <p>Total: $<span id="total-price">0</span></p>
+            
+            <a href="checkout.html"><!--shipping page linked to the buy now button-->
+            <button onclick="proceedToCheckout()()">Buy Now</button>
+            
+            </a>
+        </div>
+    </div>
+   
+
+    <footer>
+        <p>&copy; Overclocked 2025 </p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="facebook.com"><img src="images/social/fbb.png" alt="Facebook"></a>
+            <a href="https://x.com" target="x.com"><img src="images/social/twitter-logo-x.avif" alt="X"></a>
+            <a href="https://instagram.com" target="instagram.com"><img src="images/social/instagram-.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <a href="contact-us.html" class="contact-us-float" title="Contact Us">
+        <img src="images/other/contact.png" alt="Contact Us">
+    </a>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!-- Example: checkout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/favicon" href="icon/favicon.ico">
+    <script src="main.js" defer></script>
+</head>
+<body background="images/bg/bg 5.jpg">
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/main logo/logo.png" alt="Computer Store Logo" class="site-logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html" class="floating-cart" title="View Cart">
+            <img src="images/other/cart.png" alt="Cart Icon">
+        </a>
+        
+        <div class="floating-auth">
+            <img src="images/other/login.png" alt="User Icon" class="auth-icon">
+            <div class="auth-dropdown">
+                <a href="signup.html">Sign Up</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="shipping-container">
+        <h2 class="section-title">Enter Your Shipping Details</h2>
+
+       
+
+      
+        <form id="personal-details-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required>
+        </form>
+
+        <h2 class="section-title">Delivery Details</h2>
+        <form id="delivery-details-form">
+            <label for="address">Shipping Address</label>
+            <input type="text" id="address" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" required>
+
+            <label for="postal-code">Postal Code</label>
+            <input type="text" id="postal-code" required>
+        </form>
+
+        <h2 class="section-title">Payment Information</h2>
+        <div id="payment-selection">
+            <label>Select Payment Method:</label>
+            <input type="radio" id="visa" name="payment-method" value="visa" required>
+            <label for="visa">Visa Card</label>
+
+            <input type="radio" id="mastercard" name="payment-method" value="mastercard" required>
+            <label for="mastercard">Mastercard</label>
+
+            <input type="radio" id="cod" name="payment-method" value="cod" required>
+            <label for="cod">Cash on Delivery</label>
+        </div>
+
+        <div id="card-details" style="display:none;">
+            <form id="payment-info-form">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number">
+
+                <label for="expiry-date">Expiry Date (MM/YY)</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY">
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv">
+            </form>
+        </div>
+
+        <button type="button" onclick="processPayment()">Confirm order</button>
+
+        <div id="confirmation-message" style="display:none;">
+            <p>Thank you for your purchase! Your estimated delivery date is: <span id="delivery-date"></span>.</p>
+            <p><a href="index.html">Go To Home Page</a></p>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
