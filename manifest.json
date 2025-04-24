@@ -1,7 +1,7 @@
 {
     "name": "Overlclocked",
     "short_name": "Overclocked",
-    "description": "YWelcome to the Ultimate Computer Store.",
+    "description": "Welcome to the Ultimate Computer Store.",
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#000000",
