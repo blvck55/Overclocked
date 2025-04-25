@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Computer Store</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
-    <meta name="description" content="Explore and order top-quality computer components including processors, graphics cards, RAM, storage, and motherboards. Easy signup, favorites, and a seamless cart system!">
-
-</head>
+    <head>
+        <!-- Meta tags for character set, responsiveness, and SEO -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Explore and order top-quality computer components including processors, graphics cards, RAM, storage, and motherboards. Easy signup, favorites, and a seamless cart system!">
+        
+        <!-- Page title -->
+        <title>Home - Computer Store</title>
+        
+        <!-- External CSS and other resources -->
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="manifest" href="manifest.json" />
+        <link rel="icon" type="image/favicon" href="icon/favicon.ico" />
+        <script src="main.js" defer></script>
+      </head>
+<!-- Logo section with link to homepage -->
 <div class="logo-container">
     <a href="index.html">
         <img src="images/main logo/logo.png" alt="Computer Store Logo" class="site-logo">
     </a>
 </div>
+
+<!-- Page background image -->
 <body background="images/bg/bg 11.png">
    
+    <!-- Login form container -->
     <div class="login-container">
         <form class="login-form">
             <h2>Login</h2>
 
+            <!-- Email input field -->
             <label for="email">Email</label>
             <input type="email" id="email" placeholder="Enter your email" required>
 
+            <!-- Password input field -->
             <label for="password">Password</label>
             <input type="password" id="password" placeholder="Enter your password" required>
 
+            <!-- Remember me checkbox -->
             <div class="remember">
                 <input type="checkbox" id="remember">
                 <label for="remember">Remember me</label>
             </div>
 
+            <!-- Login button -->
             <button type="submit">Login</button>
+
+            <!-- Link to sign up page for new users -->
             <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
         </form>
     </div>
+
+    <!-- Footer section with social media icons -->
     <footer>
         <p>&copy; Overclocked 2025 </p>
         <div class="social-icons">
@@ -45,8 +62,10 @@
         </div>
     </footer>
 
-<a href="contact-us.html" class="contact-us-float" title="Contact Us">
-    <img src="images/other/contact.png" alt="Contact Us">
-</a>    
+    <!-- Floating contact us button linking to the contact page -->
+    <a href="contact-us.html" class="contact-us-float" title="Contact Us">
+        <img src="images/other/contact.png" alt="Contact Us">
+    </a>    
+
 </body>
 </html>

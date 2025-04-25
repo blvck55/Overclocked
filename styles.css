@@ -1,11 +1,11 @@
-/* General Reset */
+/* General */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and General Styles */
+/* Body Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
@@ -180,7 +180,7 @@ header nav ul li a:hover {
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
-/* Simple Search Bar - Left Aligned */
+/* Search Bar*/
 .search-container {
     position: absolute;
     top: 80px;
@@ -225,7 +225,7 @@ header nav ul li a:hover {
     height: 100vh;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.7; /* optional: dim video for text contrast */
+    opacity: 0.7; /*dim video for text contrast */
 }
 
 .intro-text, .categories, header, footer {
@@ -415,23 +415,23 @@ button {
     padding: 10px;
     margin: 10px;
     cursor: pointer;
-    background-color: #ff7300; /* Updated primary button color */
+    background-color: #ff7300; /* primary button color */
     color: white;
     border: none;
     border-radius: 5px;
 }
 
 button:hover {
-    background-color: #000000; /* Updated hover color */
+    background-color: #000000; /*  hover color */
 }
 
 /* Favorites Button */
 .add-to-favorites {
-    background-color: black; /* Keeps the original favorite button color */
+    background-color: black; /*  favorite button color */
 }
 
 .add-to-favorites:hover {
-    background-color: black; /* Updated hover for favorites button */
+    background-color: black; /* hover for favorites button */
 }
 
 /* Product List Styles */
@@ -455,7 +455,7 @@ button:hover {
 
 /* Product Card Styling */
 .product-card {
-    background-color: #fff; /* Keeps product card background white */
+    background-color: #fff; /*product card background white */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -465,7 +465,7 @@ button:hover {
 
 /* Card Button */
 .product-card button {
-    background-color: #ff7300; /* Updated color for product card buttons */
+    background-color: #ff7300; /*color for product card buttons */
     border: none;
     color: white;
     padding: 10px;
@@ -474,7 +474,7 @@ button:hover {
 }
 
 .product-card button:hover {
-    background-color: #000000; /* Updated hover color for product card buttons */
+    background-color: #000000; /*hover color for product card buttons */
 }
 
 
@@ -530,7 +530,7 @@ button:hover {
 }
 
 .remove-item {
-    background-color: #dc3545; /* Red color */
+    background-color: #dc3545;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -539,13 +539,13 @@ button:hover {
     display: inline-block;
     font-size: 14px;
     cursor: pointer;
-    border-radius: 5px; /* Optional: rounded corners */
+    border-radius: 5px; /*rounded corners */
 }
 
 .remove-item:hover {
-    background-color: #c82333; /* Darker red on hover */
+    background-color: #c82333; /* Dark red hover */
 }
-/*--------------------------------------shipping page--------------------*/
+/*shipping page*/
 .shipping-container form {
     margin-bottom: 25px;
 }
@@ -592,7 +592,6 @@ button:hover {
 
 #payment-selection input[type="radio"] {
     margin-right: 8px;
-    /* Remove vertical-align: middle; as flexbox handles it */
 }
 
 #payment-selection label[for="visa"],
@@ -771,13 +770,7 @@ button:hover {
     }
 }
 
-/* Responsive */
-@media (max-width: 480px) {
-    .signup-container,
-    .login-container {
-        padding: 30px 20px;
-    }
-}
+
 
 /* contact */
 .contact-main {
@@ -835,8 +828,6 @@ button:hover {
 }
 
 
-
-
   /* Favourites Page Table Styles */
 form {
     background-color: white;
@@ -891,6 +882,14 @@ form {
     gap: 10px;
   }
 
+
+  /* mobile Responsive */
+@media (max-width: 480px) {
+    .signup-container,
+    .login-container {
+        padding: 30px 20px;
+    }
+}
 
 @media (max-width: 768px) {
     nav ul {

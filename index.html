@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags for character set, responsiveness, and SEO -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Explore and order top-quality computer components including processors, graphics cards, RAM, storage, and motherboards. Easy signup, favorites, and a seamless cart system!">
+  
+  <!-- Page title -->
   <title>Home - Computer Store</title>
+  
+  <!-- External CSS and other resources -->
   <link rel="stylesheet" href="styles.css" />
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" type="image/favicon" href="icon/favicon.ico" />
@@ -12,26 +17,28 @@
 </head>
 <body>
 
+  <!-- Header section -->
   <header>
+    <!-- Logo -->
     <div class="logo-container">
       <a href="index.html">
         <img src="images/main logo/logo.png" alt="Computer Store Logo" class="site-logo" />
       </a>
     </div>
 
-    <!-- Hamburger Menu (mobile only) -->
+    <!-- Hamburger menu for mobile -->
     <div class="hamburger" id="hamburger">
       <span></span>
       <span></span>
       <span></span>
     </div>
 
-    <!-- Background Video -->
+    <!-- Background video -->
     <video autoplay muted loop class="background-video">
       <source src="video/final-Made-with-Clipchamp.mp4" type="video/mp4" />
     </video>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation bar -->
     <nav id="navbar">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -43,15 +50,17 @@
       </ul>
     </nav>
 
-    <!-- Floating Icons -->
+    <!-- Floating cart icon -->
     <a href="cart.html" class="floating-cart" title="View Cart">
       <img src="images/other/cart.png" alt="Cart Icon" />
     </a>
+
+    <!-- Floating favourites icon -->
     <a href="fav.html" class="floating-fav-icon" title="Favourites">
       <img src="images/other/fav.png" alt="Favourite Icon" />
     </a>
 
-    <!-- Floating Auth Dropdown -->
+    <!-- Floating login/signup dropdown -->
     <div class="floating-auth">
       <img src="images/other/login.png" alt="User Icon" class="auth-icon" />
       <div class="auth-dropdown">
@@ -61,7 +70,9 @@
     </div>
   </header>
 
+  <!-- Main content -->
   <main class="home-main">
+    <!-- Intro section with call-to-action -->
     <section class="intro-section">
       <div class="intro-text">
         <h1>Welcome to the Ultimate Computer Store</h1>
@@ -70,6 +81,7 @@
       </div>
     </section>
 
+    <!-- Highlight popular product categories -->
     <section class="product-highlights">
       <h2>Popular Categories</h2>
       <div class="categories">
@@ -89,8 +101,10 @@
     </section>
   </main>
 
+  <!-- Footer section -->
   <footer>
     <p>&copy; Overclocked 2025</p>
+    <!-- Social media links -->
     <div class="social-icons">
       <a href="https://facebook.com" target="facebook.com">
         <img src="images/social/fbb.png" alt="Facebook" />
@@ -104,6 +118,7 @@
     </div>
   </footer>
 
+  <!-- Floating Contact Us icon -->
   <a href="contact-us.html" class="contact-us-float" title="Contact Us">
     <img src="images/other/contact.png" alt="Contact Us" />
   </a>

@@ -1,67 +1,86 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Processors</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="icon" type="image/favicon" href="icon/favicon.ico">
-    <script src="main.js" defer></script>
-    <meta name="description" content="Explore and order top-quality computer components including processors, graphics cards, RAM, storage, and motherboards. Easy signup, favorites, and a seamless cart system!">
-
-</head>
+    <head>
+        <!-- Meta tags for character set, responsiveness, and SEO -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Explore and order top-quality computer components including processors, graphics cards, RAM, storage, and motherboards. Easy signup, favorites, and a seamless cart system!">
+        
+        <!-- Page title -->
+        <title>Home - Computer Store</title>
+        
+        <!-- External CSS and other resources -->
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="manifest" href="manifest.json" />
+        <link rel="icon" type="image/favicon" href="icon/favicon.ico" />
+        <script src="main.js" defer></script>
+      </head>
+<!--background image -->
 <body background="images/bg/bg22.png">
-<header>
+
+    <!-- Header Section -->
+    <header>
+        <!-- Logo -->
         <div class="logo-container">
             <a href="index.html">
                 <img src="images/main logo/logo.png" alt="Computer Store Logo" class="site-logo">
             </a>
         </div>
-        <!-- Search Bar -->
-     <div class="header-right">
-        <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search...">
-        <div id="searchResults" style="display: none; position: absolute; background-color: #a4a4a4; border: 1px solid #ddd; z-index: 10;"></div>
-    </div>
-    <!-- Hamburger Menu (mobile only) -->
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <!-- Navigation Bar -->
-      <nav id="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="processors.html">Processors</a></li>
-          <li><a href="graphics-cards.html">Graphics Cards</a></li>
-          <li><a href="motherboards.html">Motherboards</a></li>
-          <li><a href="ram.html">Memory (RAM)</a></li>
-          <li><a href="storage.html">Storage</a></li>
-        </ul>
-      </nav>
-    <a href="cart.html" class="floating-cart" title="View Cart">
-        <img src="images/other/cart.png" alt="Cart Icon">
-    </a>
-    <a href="fav.html" class="floating-fav-icon" title="Favourites">
-      <img src="images/other/fav.png" alt="Favourite Icon">
-    </a>
     
-    <div class="floating-auth">
-        <img src="images/other/login.png" alt="User Icon" class="auth-icon">
-        <div class="auth-dropdown">
-            <a href="signup.html">Sign Up</a>
-            <a href="login.html">Login</a>
+        <!-- Search Bar -->
+        <div class="header-right">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <div id="searchResults" style="display: none; position: absolute; background-color: #a4a4a4; border: 1px solid #ddd; z-index: 10;"></div>
+            </div>
+    
+            <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <!-- Navigation Menu -->
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="processors.html">Processors</a></li>
+                    <li><a href="graphics-cards.html">Graphics Cards</a></li>
+                    <li><a href="motherboards.html">Motherboards</a></li>
+                    <li><a href="ram.html">Memory (RAM)</a></li>
+                    <li><a href="storage.html">Storage</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Floating Cart Icon -->
+            <a href="cart.html" class="floating-cart" title="View Cart">
+                <img src="images/other/cart.png" alt="Cart Icon">
+            </a>
+    
+            <!-- Floating Favourites Icon -->
+            <a href="fav.html" class="floating-fav-icon" title="Favourites">
+                <img src="images/other/fav.png" alt="Favourite Icon">
+            </a>
+    
+            <!-- Login/Signup Dropdown -->
+            <div class="floating-auth">
+                <img src="images/other/login.png" alt="User Icon" class="auth-icon">
+                <div class="auth-dropdown">
+                    <a href="signup.html">Sign Up</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
         </div>
-    </div>
-</header>
-
+    </header>
+    
+    <!-- Processors Section -->
     <section id="processors">
         <h2 class="section-title">Processors</h2>
         <div class="product-container">
+    
+            <!-- Product 1 -->
             <div class="product">
                 <img src="images/processors/i9-13900k-.jpeg" alt="Intel Core i9-13900K">
                 <h3>Intel Core i9-13900K</h3>
@@ -72,6 +91,7 @@
                 <button class="add-to-favorites" onclick="saveFavouriteOrder('processors')">Add to Favorites ❤️</button>
             </div>
     
+            <!-- Product 2 -->
             <div class="product">
                 <img src="images/processors/amd-ryzen-9.webp" alt="AMD Ryzen 9 7900X">
                 <h3>AMD Ryzen 9 7900X</h3>
@@ -82,6 +102,7 @@
                 <button class="add-to-favorites" onclick="saveFavouriteOrder('processors')">Add to Favorites ❤️</button>
             </div>
     
+            <!-- Product 3 -->
             <div class="product">
                 <img src="images/processors/AMD-RYZEN-5-7600X-DESKTOP-PROCESSOR.png" alt="AMD Athlon Gold 7500F">
                 <h3>AMD Ryzen 5 7600</h3>
@@ -92,10 +113,10 @@
                 <button class="add-to-favorites" onclick="saveFavouriteOrder('processors')">Add to Favorites ❤️</button>
             </div>
     
-    
+            <!-- Product 4 -->
             <div class="product">
-                <img src="images/processors/i5 13400f.webp" alt="Intel Pentium Gold G7400 ">
-                <h3>Intel Core i5-13400F </h3>
+                <img src="images/processors/i5 13400f.webp" alt="Intel Pentium Gold G7400">
+                <h3>Intel Core i5-13400F</h3>
                 <p>Efficient and powerful processor</p>
                 <p class="price">$250</p>
                 <input type="number" min="1" id="Intel Core i5-13400F-quantity" placeholder="Quantity">
@@ -103,7 +124,7 @@
                 <button class="add-to-favorites" onclick="saveFavouriteOrder('processors')">Add to Favorites ❤️</button>
             </div>
     
-    
+            <!-- Product 5 -->
             <div class="product">
                 <img src="images/processors/amd ryzen 9 9950x.png" alt="Intel Xeon W-3175X">
                 <h3>AMD Ryzen 9 9950X</h3>
@@ -114,6 +135,7 @@
                 <button class="add-to-favorites" onclick="saveFavouriteOrder('processors')">Add to Favorites ❤️</button>
             </div>
     
+            <!-- Product 6 -->
             <div class="product">
                 <img src="images/processors/i9-14900k.webp" alt="AMD EPYC 7763">
                 <h3>Intel Core i9-14900K</h3>
@@ -123,23 +145,24 @@
                 <button class="add-to-cart" onclick="addToCart('Intel Core i9-14900K', 6000, 'Intel Core i9-14900K')">Add to Cart</button>
                 <button class="add-to-favorites" onclick="saveFavouriteOrder('processors')">Add to Favorites ❤️</button>
             </div>
+    
         </div>
     </section>
-
-
-
+    
+    <!-- Footer Section -->
     <footer>
-        <footer>
-            <p>&copy; Overclocked 2025 </p>
-            <div class="social-icons">
-                <a href="https://facebook.com" target="facebook.com"><img src="images/social/fbb.png" alt="Facebook"></a>
-                <a href="https://x.com" target="x.com"><img src="images/social/twitter-logo-x.avif" alt="X"></a>
-                <a href="https://instagram.com" target="instagram.com"><img src="images/social/instagram-.png" alt="Instagram"></a>
-            </div>
-        </footer>
-
+        <p>&copy; Overclocked 2025 </p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="facebook.com"><img src="images/social/fbb.png" alt="Facebook"></a>
+            <a href="https://x.com" target="x.com"><img src="images/social/twitter-logo-x.avif" alt="X"></a>
+            <a href="https://instagram.com" target="instagram.com"><img src="images/social/instagram-.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    
+    <!-- Floating Contact Icon -->
     <a href="contact-us.html" class="contact-us-float" title="Contact Us">
         <img src="images/other/contact.png" alt="Contact Us">
     </a>
-</body>
-</html>
+    
+    </body>
+    </html>
