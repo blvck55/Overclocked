@@ -45,7 +45,7 @@ function addToCart(name, price, id) {
         messageSpan.textContent = ' Added to cart!';
         messageSpan.style.marginLeft = '5px';
         messageSpan.style.color = 'green';
-        messageSpan.style.display = 'inline-block'; // Added this line
+        messageSpan.style.display = 'inline-block';
         addButton.parentNode.insertBefore(messageSpan, addButton.nextSibling);
 
         // Optionally, remove the message after a short delay
@@ -101,7 +101,7 @@ function processPayment() {
         errorMessage += "Please enter a valid Email Address.\n";
     }
 
-    // Phone Number (you might want to check for a specific format, but basic string check for now)
+    // Phone Number 
     if (!isString(phoneInput.value.trim()) || phoneInput.value.trim() === "") {
         isValid = false;
         errorMessage += "Please enter a valid Phone Number.\n";
@@ -119,7 +119,7 @@ function processPayment() {
         errorMessage += "Please enter a valid City.\n";
     }
 
-    // Postal Code (you might want to check for a specific format, but basic string check for now)
+    // Postal Code 
     if (!isString(postalCodeInput.value.trim()) || postalCodeInput.value.trim() === "") {
         isValid = false;
         errorMessage += "Please enter a valid Postal Code.\n";
@@ -131,19 +131,19 @@ function processPayment() {
         isValid = false;
         errorMessage += "Please select a Payment Method.\n";
     } else if (selectedPayment.value === 'visa' || selectedPayment.value === 'mastercard') {
-        // Card Number (you might want to add more specific format checking)
+        // Card Number
         if (!isString(cardNumberInput.value.trim()) || cardNumberInput.value.trim() === "") {
             isValid = false;
             errorMessage += "Please enter a valid Card Number.\n";
         }
 
-        // Expiry Date (you might want to check for MM/YY format)
+        // Expiry Date 
         if (!isString(expiryDateInput.value.trim()) || expiryDateInput.value.trim() === "") {
             isValid = false;
             errorMessage += "Please enter a valid Expiry Date (MM/YY).\n";
         }
 
-        // CVV (should typically be a 3 or 4 digit number as a string)
+        // CVV 
         if (!isString(cvvInput.value.trim()) || !/^\d{3,4}$/.test(cvvInput.value.trim())) {
             isValid = false;
             errorMessage += "Please enter a valid CVV.\n";
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load favorites on page load (if needed)
     const favoritesData = localStorage.getItem('favorites');
     const favorites = favoritesData ? JSON.parse(favoritesData) : [];
-    console.log('Loaded favorites:', favorites); // You can further process/display favorites here
+    console.log('Loaded favorites:', favorites); 
 });
 
 // Proceed to checkout
@@ -290,11 +290,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-// Close the navigation menu if a link is clicked (optional)
+// Close the navigation menu if a link is clicked 
 navLinks.addEventListener('click', (event) => {
     if (event.target.tagName === 'A') {
         navLinks.classList.remove('active');
-        hamburger.classList.remove('open'); // If you added an 'open' class
+        hamburger.classList.remove('open'); 
     }
 });
 
@@ -369,8 +369,6 @@ function displayCart() {
 
 
 //Add to favourites table 
-
-
 
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
